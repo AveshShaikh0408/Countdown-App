@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  padding: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 10vh;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.btn-container {
+  display: inline-block;
+}
+
+#timer {
+  font-size: 4.2rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+#main-text {
+  text-transform: uppercase;
+  font-size: 2rem;
+  background: linear-gradient(to top left, #ffbb00, #fd424b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.2rem;
+}
+
+hr {
+  width: 20%;
+  height: 2px;
+  border: 1px solid #39b385;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn--start {
+  margin-right: 20px;
+}
+
+.btn--start:hover {
+  color: #fff;
+  background-color: #5ec576;
+}
+.btn--reset:hover {
+  color: #fff;
+  background-color: #ff585f;
+}
+
+/* Disable Button */
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
